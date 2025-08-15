@@ -23,7 +23,9 @@ Route::get("/prueba",function(){
     return view("prueba");
 });
 
-
+ Route::get("/git",function(){
+    return "hola estamos en el git";
+ })
 Route::get("/controladores",[HolaController::class,"saludo"]);
 
 
